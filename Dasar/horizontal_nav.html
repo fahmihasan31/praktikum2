@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas CSS Dasar</title>
+</head>
+<style>
+  * {
+    margin: 10;
+    padding: 0;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 150px;
+    padding: 25px 0;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #555;
+    background-color: #eee;
+  }
+
+  /* Menu yang sedang aktif */
+  nav ul li a.active {
+    color: white;
+    background-color: #48b3b3;
+  }
+
+  /* Efek ketika mouse diarahkan ke menu */
+  nav ul li a:hover {
+    color: white;
+    background-color: #555;
+  }
+</style>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Project</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>
